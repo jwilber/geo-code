@@ -7,7 +7,7 @@ setup(name='geo_code',
       author='Jared Wilber',
       author_email='jdwlbr@gmail.com',
       license='GNU3',
-      packages=['geo-=_code'],
+      packages=['geo_code'],
       install_requires=[
             'pandas',
             'requests',
