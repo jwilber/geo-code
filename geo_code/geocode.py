@@ -9,7 +9,7 @@ class Geocoder(object):
         
     
     
-    def geocode(self, address):
+    def geocode(self, address, string_to_remove=''):
 
         """
         Geocode results from Google Maps Geocoding API.
@@ -21,6 +21,7 @@ class Geocoder(object):
         Output: Geocoded Result,
         """
         
+        address = address.replace(string_to_remove, '')
         print "currently searching for: {}".format(address)
 
         # Init Geocoding url
@@ -53,7 +54,7 @@ class Geocoder(object):
         # if there's no results or an error, try for smaller subset of string
         elif len(results['results']) == 0:
             addy = " ".join(address.split()[1:len(address.split())])
-            return self.geocode(addy)
+            return self.geocode(addy, string_to_remove=string_to_remove)
 
         # result found - return results
         else:    
