@@ -1,13 +1,13 @@
 from setuptools import setup
 
-setup(name='geo-code',
+setup(name='geo_code',
       version='0.0.1',
       description='Lightweight Python module for geocoding addresses via the Google Geocoding API',
-      url='https://github.com/jwilber/geo-code',
+      url='https://github.com/jwilber/geo_code',
       author='Jared Wilber',
       author_email='jdwlbr@gmail.com',
       license='GNU3',
-      packages=['geo-code'],
+      packages=['geo-=_code'],
       install_requires=[
             'pandas',
             'requests',
