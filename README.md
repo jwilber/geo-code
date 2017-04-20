@@ -6,11 +6,11 @@ Lightweight Python package for geocoding addresses using the Google Geocoding AP
 
 There are multiple geocoding modules in Python. What makes **geo_code** different from the others is that if offers the following functionalities:
 
-	- Batch-geocoding: Given an input csv file name (and column to geocode), **Geocoder.geocode_csv()** will return a csv file of the geocoded locations.
+- Batch-geocoding: Given an input csv file name (and column to geocode), **Geocoder.geocode_csv()** will return a csv file of the geocoded locations.
 
-	- String Removal: Address columns are often dirty, so **geo_code** allows you to input a string (or Python list of strings) to remove from a given query.
+- String Removal: Address columns are often dirty, so **geo_code** allows you to input a string (or Python list of strings) to remove from a given query.
 
-	- Delayed Geocoding: The Google Geocoding API free tier service has a request limit of ___. **geocode** allows you to use the free tier service and will automatically wait 30 minutes when a query limit is reached. It also provides functionality to save intermediate progress.
+- Delayed Geocoding: The Google Geocoding API free tier service has a request limit of ___. **geocode** allows you to use the free tier service and will automatically wait 30 minutes when a query limit is reached. It also provides functionality to save intermediate progress.
 
 
 For an input string address, `Geocoder` will return the longitude, latitude, postcode, formatted_address, and query status; e.g.: 
