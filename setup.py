@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='geo_code',
-      version='0.0.4',
+      version='0.0.5',
       description='Lightweight Python module for geocoding addresses via the Google Geocoding API',
       url='https://github.com/jwilber/geo_code',
       author='Jared Wilber',

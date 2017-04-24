@@ -93,7 +93,7 @@ class Geocoder(object):
         results = []
             
         for address in addresses:
-            if type(a)
+
             address = address.replace(string_to_remove,'')
             geocoded = False
                 
