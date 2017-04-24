@@ -23,8 +23,8 @@ class Geocoder(object):
         address = address.replace(string_to_remove,'')
         
         if verbose:
-            print "currently searching for: {}".format(address)
-            
+            #print "currently searching for: {}".format(address)
+            pass
         # Set up your Geocoding url
         geocode_url = "https://maps.googleapis.com/maps/api/geocode/json?address={}".format(address)
         
@@ -93,16 +93,18 @@ class Geocoder(object):
         results = []
             
         for address in addresses:
+            if type(a)
+            address = address.replace(string_to_remove,'')
             geocoded = False
                 
-            print "Attempting to geocode {}".format(address)
+            #print "Attempting to geocode {}".format(address)
             
             while geocoded is not True:
                     
                 try:
                     geocode_res = self.geocode(address, string_to_remove=string_to_remove, verbose=False)
                 except Exception as e:
-                    print "Error with {}, Attempt failed".format(address)
+                    #print "Error with {}, Attempt failed".format(address)
                     geocoded = True
                         
                 if pause_on_rate_limit:
@@ -113,7 +115,8 @@ class Geocoder(object):
                             
                     else:
                         if geocode_res['status'] != 'OK':
-                            print "Geocode Failed to Locate {}".format(address)
+                            #print "Geocode Failed to Locate {}".format(address)
+                            pass
                         else:
                             print "Attempt successful"
                         results.append(geocode_res)
@@ -121,7 +124,8 @@ class Geocoder(object):
                         
                 else:
                         if geocode_res['status'] != 'OK':
-                            print "Geocode Failed to Locate {}".format(address)
+                            #print "Geocode Failed to Locate {}".format(address)
+                            pass
                         else:
                             print "Attempt successful"
                         results.append(geocode_res)
@@ -192,4 +196,4 @@ class Geocoder(object):
         
         return results
             
- 
+    
